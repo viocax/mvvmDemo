@@ -123,8 +123,7 @@
 				0D653D0125DD58B8004C9912 /* SceneDelegate.swift */,
 				0D653D0325DD58B8004C9912 /* ViewController.swift */,
 				0DC2D2A625E53F4C00C40BA8 /* ViewModel.swift */,
-				0DC2D2AB25E5407D00C40BA8 /* Observable+Operation.swift */,
-				0DC2D2B025E5426E00C40BA8 /* UITableView+ReusableIdentifier.swift */,
+				0DC2D2BB25E5465A00C40BA8 /* Extension */,
 				0D653D0825DD58B8004C9912 /* Assets.xcassets */,
 				0D653D0A25DD58B8004C9912 /* LaunchScreen.storyboard */,
 				0D653D0D25DD58B8004C9912 /* Info.plist */,
@@ -148,6 +147,15 @@
 				0D653D2325DD58B9004C9912 /* Info.plist */,
 			);
 			path = mvvmPracticeUITests;
+			sourceTree = "<group>";
+		};
+		0DC2D2BB25E5465A00C40BA8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0DC2D2AB25E5407D00C40BA8 /* Observable+Operation.swift */,
+				0DC2D2B025E5426E00C40BA8 /* UITableView+ReusableIdentifier.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

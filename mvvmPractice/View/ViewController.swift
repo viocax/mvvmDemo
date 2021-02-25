@@ -32,6 +32,7 @@ private extension ViewController {
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.registerClass(UITableViewCell.self)
+        tableView.tableFooterView = UIView()
     }
     func bindView() {
         let input = ViewModel.Input(trigger: rx.viewWillAppear.asDriver())
@@ -41,10 +42,15 @@ private extension ViewController {
             .drive(tableView.rx.items)(cellforRowAt)
             .disposed(by: disposeBag)
         
+        output.isLoading
+            .drive(view.rx.indicatorAnimator)
+            .disposed(by: disposeBag)
     }
-    func cellforRowAt(_ tableView: UITableView, row: Int, element: String) -> UITableViewCell {
+    func cellforRowAt(_ tableView: UITableView, row: Int, element: Info) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(UITableViewCell.self, indexPath: IndexPath(row: row, section: 0)) ?? .init()
-        cell.textLabel?.text = element
+        cell.textLabel?.text = element.description
+        cell.textLabel?.numberOfLines = 0
+        cell.selectionStyle = .none
         return cell
     }
 }

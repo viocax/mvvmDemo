@@ -22,6 +22,8 @@
 		0D653D0C25DD58B8004C9912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D653D0A25DD58B8004C9912 /* LaunchScreen.storyboard */; };
 		0D653D1725DD58B9004C9912 /* mvvmPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D653D1625DD58B9004C9912 /* mvvmPracticeTests.swift */; };
 		0D653D2225DD58B9004C9912 /* mvvmPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D653D2125DD58B9004C9912 /* mvvmPracticeUITests.swift */; };
+		0D775F9225E7484E002A448A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D775F9125E7484E002A448A /* Service.swift */; };
+		0D775F9A25E78142002A448A /* HUDCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D775F9925E78142002A448A /* HUDCompatible.swift */; };
 		0DC2D2A725E53F4C00C40BA8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2D2A625E53F4C00C40BA8 /* ViewModel.swift */; };
 		0DC2D2AC25E5407D00C40BA8 /* Observable+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2D2AB25E5407D00C40BA8 /* Observable+Operation.swift */; };
 		0DC2D2B125E5426E00C40BA8 /* UITableView+ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2D2B025E5426E00C40BA8 /* UITableView+ReusableIdentifier.swift */; };
@@ -62,6 +64,8 @@
 		0D653D1D25DD58B9004C9912 /* mvvmPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvvmPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D653D2125DD58B9004C9912 /* mvvmPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvmPracticeUITests.swift; sourceTree = "<group>"; };
 		0D653D2325DD58B9004C9912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D775F9125E7484E002A448A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		0D775F9925E78142002A448A /* HUDCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDCompatible.swift; sourceTree = "<group>"; };
 		0DC2D2A625E53F4C00C40BA8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0DC2D2AB25E5407D00C40BA8 /* Observable+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Operation.swift"; sourceTree = "<group>"; };
 		0DC2D2B025E5426E00C40BA8 /* UITableView+ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableIdentifier.swift"; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				0D0FD82525E7417C0044AB10 /* JSONParser.swift */,
+				0D775F9925E78142002A448A /* HUDCompatible.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			children = (
 				0D653CFF25DD58B8004C9912 /* AppDelegate.swift */,
 				0D653D0125DD58B8004C9912 /* SceneDelegate.swift */,
+				0D775F9125E7484E002A448A /* Service.swift */,
 				0D0FD82A25E7437D0044AB10 /* Model */,
 				0D0FD77625E734940044AB10 /* ViewModel */,
 				0D0FD77125E7343E0044AB10 /* View */,
@@ -364,6 +370,8 @@
 				0D28AEA025E6AC9200DCC2B8 /* IndicatorView.swift in Sources */,
 				0D653D0025DD58B8004C9912 /* AppDelegate.swift in Sources */,
 				0DC2D2A725E53F4C00C40BA8 /* ViewModel.swift in Sources */,
+				0D775F9225E7484E002A448A /* Service.swift in Sources */,
+				0D775F9A25E78142002A448A /* HUDCompatible.swift in Sources */,
 				0D653D0225DD58B8004C9912 /* SceneDelegate.swift in Sources */,
 				0D0FD82C25E743AD0044AB10 /* InfoModel.swift in Sources */,
 			);

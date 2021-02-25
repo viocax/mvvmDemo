@@ -51,17 +51,17 @@
 		0D0FD82525E7417C0044AB10 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		0D0FD82B25E743AD0044AB10 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 		0D28AE9F25E6AC9200DCC2B8 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
-		0D653CFC25DD58B8004C9912 /* mvvmPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvmPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D653CFC25DD58B8004C9912 /* mvvmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D653CFF25DD58B8004C9912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D653D0125DD58B8004C9912 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D653D0325DD58B8004C9912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D653D0825DD58B8004C9912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D653D0B25DD58B8004C9912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D653D0D25DD58B8004C9912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D653D1225DD58B9004C9912 /* mvvmPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvvmPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D653D1225DD58B9004C9912 /* mvvmDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvvmDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D653D1625DD58B9004C9912 /* mvvmPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvmPracticeTests.swift; sourceTree = "<group>"; };
 		0D653D1825DD58B9004C9912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D653D1D25DD58B9004C9912 /* mvvmPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvvmPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D653D1D25DD58B9004C9912 /* mvvmDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvvmDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D653D2125DD58B9004C9912 /* mvvmPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvmPracticeUITests.swift; sourceTree = "<group>"; };
 		0D653D2325DD58B9004C9912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D775F9125E7484E002A448A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -173,9 +173,9 @@
 		0D653CFD25DD58B8004C9912 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D653CFC25DD58B8004C9912 /* mvvmPractice.app */,
-				0D653D1225DD58B9004C9912 /* mvvmPracticeTests.xctest */,
-				0D653D1D25DD58B9004C9912 /* mvvmPracticeUITests.xctest */,
+				0D653CFC25DD58B8004C9912 /* mvvmDemo.app */,
+				0D653D1225DD58B9004C9912 /* mvvmDemoTests.xctest */,
+				0D653D1D25DD58B9004C9912 /* mvvmDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,9 +227,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D653CFB25DD58B8004C9912 /* mvvmPractice */ = {
+		0D653CFB25DD58B8004C9912 /* mvvmDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D653D2625DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmPractice" */;
+			buildConfigurationList = 0D653D2625DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmDemo" */;
 			buildPhases = (
 				0D653CF825DD58B8004C9912 /* Sources */,
 				0D653CF925DD58B8004C9912 /* Frameworks */,
@@ -239,7 +239,7 @@
 			);
 			dependencies = (
 			);
-			name = mvvmPractice;
+			name = mvvmDemo;
 			packageProductDependencies = (
 				0D1194EA25E53ED8009AAF63 /* RxSwift */,
 				0D1194EC25E53EDE009AAF63 /* RxCocoa */,
@@ -247,12 +247,12 @@
 				0D1194F025E53EE6009AAF63 /* RxBlocking */,
 			);
 			productName = mvvmPractice;
-			productReference = 0D653CFC25DD58B8004C9912 /* mvvmPractice.app */;
+			productReference = 0D653CFC25DD58B8004C9912 /* mvvmDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0D653D1125DD58B9004C9912 /* mvvmPracticeTests */ = {
+		0D653D1125DD58B9004C9912 /* mvvmDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D653D2925DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmPracticeTests" */;
+			buildConfigurationList = 0D653D2925DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmDemoTests" */;
 			buildPhases = (
 				0D653D0E25DD58B9004C9912 /* Sources */,
 				0D653D0F25DD58B9004C9912 /* Frameworks */,
@@ -263,14 +263,14 @@
 			dependencies = (
 				0D653D1425DD58B9004C9912 /* PBXTargetDependency */,
 			);
-			name = mvvmPracticeTests;
+			name = mvvmDemoTests;
 			productName = mvvmPracticeTests;
-			productReference = 0D653D1225DD58B9004C9912 /* mvvmPracticeTests.xctest */;
+			productReference = 0D653D1225DD58B9004C9912 /* mvvmDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0D653D1C25DD58B9004C9912 /* mvvmPracticeUITests */ = {
+		0D653D1C25DD58B9004C9912 /* mvvmDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D653D2C25DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmPracticeUITests" */;
+			buildConfigurationList = 0D653D2C25DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmDemoUITests" */;
 			buildPhases = (
 				0D653D1925DD58B9004C9912 /* Sources */,
 				0D653D1A25DD58B9004C9912 /* Frameworks */,
@@ -281,9 +281,9 @@
 			dependencies = (
 				0D653D1F25DD58B9004C9912 /* PBXTargetDependency */,
 			);
-			name = mvvmPracticeUITests;
+			name = mvvmDemoUITests;
 			productName = mvvmPracticeUITests;
-			productReference = 0D653D1D25DD58B9004C9912 /* mvvmPracticeUITests.xctest */;
+			productReference = 0D653D1D25DD58B9004C9912 /* mvvmDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -308,7 +308,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0D653CF725DD58B8004C9912 /* Build configuration list for PBXProject "mvvmPractice" */;
+			buildConfigurationList = 0D653CF725DD58B8004C9912 /* Build configuration list for PBXProject "mvvmDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -324,9 +324,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D653CFB25DD58B8004C9912 /* mvvmPractice */,
-				0D653D1125DD58B9004C9912 /* mvvmPracticeTests */,
-				0D653D1C25DD58B9004C9912 /* mvvmPracticeUITests */,
+				0D653CFB25DD58B8004C9912 /* mvvmDemo */,
+				0D653D1125DD58B9004C9912 /* mvvmDemoTests */,
+				0D653D1C25DD58B9004C9912 /* mvvmDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -398,12 +398,12 @@
 /* Begin PBXTargetDependency section */
 		0D653D1425DD58B9004C9912 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D653CFB25DD58B8004C9912 /* mvvmPractice */;
+			target = 0D653CFB25DD58B8004C9912 /* mvvmDemo */;
 			targetProxy = 0D653D1325DD58B9004C9912 /* PBXContainerItemProxy */;
 		};
 		0D653D1F25DD58B9004C9912 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0D653CFB25DD58B8004C9912 /* mvvmPractice */;
+			target = 0D653CFB25DD58B8004C9912 /* mvvmDemo */;
 			targetProxy = 0D653D1E25DD58B9004C9912 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -594,7 +594,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvmPractice.app/mvvmPractice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvmDemo.app/mvvmDemo";
 			};
 			name = Debug;
 		};
@@ -616,7 +616,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvmPractice.app/mvvmPractice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvmDemo.app/mvvmDemo";
 			};
 			name = Release;
 		};
@@ -663,7 +663,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D653CF725DD58B8004C9912 /* Build configuration list for PBXProject "mvvmPractice" */ = {
+		0D653CF725DD58B8004C9912 /* Build configuration list for PBXProject "mvvmDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D653D2425DD58B9004C9912 /* Debug */,
@@ -672,7 +672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D653D2625DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmPractice" */ = {
+		0D653D2625DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D653D2725DD58B9004C9912 /* Debug */,
@@ -681,7 +681,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D653D2925DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmPracticeTests" */ = {
+		0D653D2925DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D653D2A25DD58B9004C9912 /* Debug */,
@@ -690,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D653D2C25DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmPracticeUITests" */ = {
+		0D653D2C25DD58B9004C9912 /* Build configuration list for PBXNativeTarget "mvvmDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0D653D2D25DD58B9004C9912 /* Debug */,

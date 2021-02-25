@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0FD82025E740F00044AB10 /* FakeDataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D0FD81F25E740F00044AB10 /* FakeDataSource.json */; };
+		0D0FD82625E7417C0044AB10 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0FD82525E7417C0044AB10 /* JSONParser.swift */; };
+		0D0FD82C25E743AD0044AB10 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0FD82B25E743AD0044AB10 /* InfoModel.swift */; };
 		0D1194EB25E53ED8009AAF63 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0D1194EA25E53ED8009AAF63 /* RxSwift */; };
 		0D1194ED25E53EDE009AAF63 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0D1194EC25E53EDE009AAF63 /* RxCocoa */; };
 		0D1194EF25E53EE2009AAF63 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0D1194EE25E53EE2009AAF63 /* RxRelay */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0FD81F25E740F00044AB10 /* FakeDataSource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FakeDataSource.json; sourceTree = "<group>"; };
+		0D0FD82525E7417C0044AB10 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		0D0FD82B25E743AD0044AB10 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 		0D28AE9F25E6AC9200DCC2B8 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		0D653CFC25DD58B8004C9912 /* mvvmPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvmPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D653CFF25DD58B8004C9912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0FD77125E7343E0044AB10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D653D0325DD58B8004C9912 /* ViewController.swift */,
+				0D0FD77225E7348A0044AB10 /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D0FD77225E7348A0044AB10 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0D28AE9F25E6AC9200DCC2B8 /* IndicatorView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0D0FD77625E734940044AB10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0DC2D2A625E53F4C00C40BA8 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D0FD77725E7349E0044AB10 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0D653D0825DD58B8004C9912 /* Assets.xcassets */,
+				0D653D0A25DD58B8004C9912 /* LaunchScreen.storyboard */,
+				0D0FD81F25E740F00044AB10 /* FakeDataSource.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0D0FD82425E741690044AB10 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0D0FD82525E7417C0044AB10 /* JSONParser.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0D0FD82A25E7437D0044AB10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D0FD82B25E743AD0044AB10 /* InfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0D1194E925E53ED8009AAF63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,12 +180,12 @@
 			children = (
 				0D653CFF25DD58B8004C9912 /* AppDelegate.swift */,
 				0D653D0125DD58B8004C9912 /* SceneDelegate.swift */,
-				0D653D0325DD58B8004C9912 /* ViewController.swift */,
-				0DC2D2A625E53F4C00C40BA8 /* ViewModel.swift */,
-				0D28AE9F25E6AC9200DCC2B8 /* IndicatorView.swift */,
+				0D0FD82A25E7437D0044AB10 /* Model */,
+				0D0FD77625E734940044AB10 /* ViewModel */,
+				0D0FD77125E7343E0044AB10 /* View */,
+				0D0FD82425E741690044AB10 /* Utility */,
 				0DC2D2BB25E5465A00C40BA8 /* Extension */,
-				0D653D0825DD58B8004C9912 /* Assets.xcassets */,
-				0D653D0A25DD58B8004C9912 /* LaunchScreen.storyboard */,
+				0D0FD77725E7349E0044AB10 /* Resource */,
 				0D653D0D25DD58B8004C9912 /* Info.plist */,
 			);
 			path = mvvmPractice;
@@ -275,6 +332,7 @@
 			files = (
 				0D653D0C25DD58B8004C9912 /* LaunchScreen.storyboard in Resources */,
 				0D653D0925DD58B8004C9912 /* Assets.xcassets in Resources */,
+				0D0FD82025E740F00044AB10 /* FakeDataSource.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,11 +359,13 @@
 			files = (
 				0DC2D2AC25E5407D00C40BA8 /* Observable+Operation.swift in Sources */,
 				0DC2D2B125E5426E00C40BA8 /* UITableView+ReusableIdentifier.swift in Sources */,
+				0D0FD82625E7417C0044AB10 /* JSONParser.swift in Sources */,
 				0D653D0425DD58B8004C9912 /* ViewController.swift in Sources */,
 				0D28AEA025E6AC9200DCC2B8 /* IndicatorView.swift in Sources */,
 				0D653D0025DD58B8004C9912 /* AppDelegate.swift in Sources */,
 				0DC2D2A725E53F4C00C40BA8 /* ViewModel.swift in Sources */,
 				0D653D0225DD58B8004C9912 /* SceneDelegate.swift in Sources */,
+				0D0FD82C25E743AD0044AB10 /* InfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -458,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -476,6 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
 				INFOPLIST_FILE = mvvmPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,6 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
 				INFOPLIST_FILE = mvvmPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,7 +576,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
 				INFOPLIST_FILE = mvvmPracticeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,7 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
 				INFOPLIST_FILE = mvvmPracticeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

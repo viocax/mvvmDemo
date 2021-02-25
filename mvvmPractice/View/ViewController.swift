@@ -7,7 +7,6 @@
 
 import UIKit
 import RxSwift
-import RxRelay
 import RxCocoa
 
 class ViewController: UIViewController {

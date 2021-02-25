@@ -1,6 +1,6 @@
 //
-//  mvvmPracticeTests.swift
-//  mvvmPracticeTests
+//  mvvmDemoTests.swift
+//  mvvmDemoTests
 //
 //  Created by Jie liang Huang on 2021/2/17.
 //
@@ -8,7 +8,7 @@
 import XCTest
 @testable import mvvmPractice
 
-class mvvmPracticeTests: XCTestCase {
+class mvvmDemoTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

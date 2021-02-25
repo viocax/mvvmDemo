@@ -20,8 +20,8 @@
 		0D653D0425DD58B8004C9912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D653D0325DD58B8004C9912 /* ViewController.swift */; };
 		0D653D0925DD58B8004C9912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D653D0825DD58B8004C9912 /* Assets.xcassets */; };
 		0D653D0C25DD58B8004C9912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D653D0A25DD58B8004C9912 /* LaunchScreen.storyboard */; };
-		0D653D1725DD58B9004C9912 /* mvvmPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D653D1625DD58B9004C9912 /* mvvmPracticeTests.swift */; };
-		0D653D2225DD58B9004C9912 /* mvvmPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D653D2125DD58B9004C9912 /* mvvmPracticeUITests.swift */; };
+		0D653D1725DD58B9004C9912 /* mvvmDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D653D1625DD58B9004C9912 /* mvvmDemoTests.swift */; };
+		0D653D2225DD58B9004C9912 /* mvvmDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D653D2125DD58B9004C9912 /* mvvmDemoUITests.swift */; };
 		0D775F9225E7484E002A448A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D775F9125E7484E002A448A /* Service.swift */; };
 		0D775F9A25E78142002A448A /* HUDCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D775F9925E78142002A448A /* HUDCompatible.swift */; };
 		0DC2D2A725E53F4C00C40BA8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2D2A625E53F4C00C40BA8 /* ViewModel.swift */; };
@@ -59,10 +59,10 @@
 		0D653D0B25DD58B8004C9912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D653D0D25DD58B8004C9912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D653D1225DD58B9004C9912 /* mvvmDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvvmDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D653D1625DD58B9004C9912 /* mvvmPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvmPracticeTests.swift; sourceTree = "<group>"; };
+		0D653D1625DD58B9004C9912 /* mvvmDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvmDemoTests.swift; sourceTree = "<group>"; };
 		0D653D1825DD58B9004C9912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D653D1D25DD58B9004C9912 /* mvvmDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvvmDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D653D2125DD58B9004C9912 /* mvvmPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvmPracticeUITests.swift; sourceTree = "<group>"; };
+		0D653D2125DD58B9004C9912 /* mvvmDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mvvmDemoUITests.swift; sourceTree = "<group>"; };
 		0D653D2325DD58B9004C9912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D775F9125E7484E002A448A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		0D775F9925E78142002A448A /* HUDCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDCompatible.swift; sourceTree = "<group>"; };
@@ -162,9 +162,9 @@
 		0D653CF325DD58B8004C9912 = {
 			isa = PBXGroup;
 			children = (
-				0D653CFE25DD58B8004C9912 /* mvvmPractice */,
-				0D653D1525DD58B9004C9912 /* mvvmPracticeTests */,
-				0D653D2025DD58B9004C9912 /* mvvmPracticeUITests */,
+				0D653CFE25DD58B8004C9912 /* mvvmDemo */,
+				0D653D1525DD58B9004C9912 /* mvvmDemoTests */,
+				0D653D2025DD58B9004C9912 /* mvvmDemoUITests */,
 				0D653CFD25DD58B8004C9912 /* Products */,
 				0D1194E925E53ED8009AAF63 /* Frameworks */,
 			);
@@ -180,7 +180,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D653CFE25DD58B8004C9912 /* mvvmPractice */ = {
+		0D653CFE25DD58B8004C9912 /* mvvmDemo */ = {
 			isa = PBXGroup;
 			children = (
 				0D653CFF25DD58B8004C9912 /* AppDelegate.swift */,
@@ -194,25 +194,25 @@
 				0D0FD77725E7349E0044AB10 /* Resource */,
 				0D653D0D25DD58B8004C9912 /* Info.plist */,
 			);
-			path = mvvmPractice;
+			path = mvvmDemo;
 			sourceTree = "<group>";
 		};
-		0D653D1525DD58B9004C9912 /* mvvmPracticeTests */ = {
+		0D653D1525DD58B9004C9912 /* mvvmDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				0D653D1625DD58B9004C9912 /* mvvmPracticeTests.swift */,
+				0D653D1625DD58B9004C9912 /* mvvmDemoTests.swift */,
 				0D653D1825DD58B9004C9912 /* Info.plist */,
 			);
-			path = mvvmPracticeTests;
+			path = mvvmDemoTests;
 			sourceTree = "<group>";
 		};
-		0D653D2025DD58B9004C9912 /* mvvmPracticeUITests */ = {
+		0D653D2025DD58B9004C9912 /* mvvmDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0D653D2125DD58B9004C9912 /* mvvmPracticeUITests.swift */,
+				0D653D2125DD58B9004C9912 /* mvvmDemoUITests.swift */,
 				0D653D2325DD58B9004C9912 /* Info.plist */,
 			);
-			path = mvvmPracticeUITests;
+			path = mvvmDemoUITests;
 			sourceTree = "<group>";
 		};
 		0DC2D2BB25E5465A00C40BA8 /* Extension */ = {
@@ -381,7 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D653D1725DD58B9004C9912 /* mvvmPracticeTests.swift in Sources */,
+				0D653D1725DD58B9004C9912 /* mvvmDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D653D2225DD58B9004C9912 /* mvvmPracticeUITests.swift in Sources */,
+				0D653D2225DD58B9004C9912 /* mvvmDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +543,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
-				INFOPLIST_FILE = mvvmPractice/Info.plist;
+				INFOPLIST_FILE = mvvmDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -563,7 +563,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
-				INFOPLIST_FILE = mvvmPractice/Info.plist;
+				INFOPLIST_FILE = mvvmDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -583,7 +583,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
-				INFOPLIST_FILE = mvvmPracticeTests/Info.plist;
+				INFOPLIST_FILE = mvvmDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,7 +605,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
-				INFOPLIST_FILE = mvvmPracticeTests/Info.plist;
+				INFOPLIST_FILE = mvvmDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,7 +626,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
-				INFOPLIST_FILE = mvvmPracticeUITests/Info.plist;
+				INFOPLIST_FILE = mvvmDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,7 +646,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVHFFWK64F;
-				INFOPLIST_FILE = mvvmPracticeUITests/Info.plist;
+				INFOPLIST_FILE = mvvmDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

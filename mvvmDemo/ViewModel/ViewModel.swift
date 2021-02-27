@@ -18,31 +18,14 @@ class ViewModel {
         let isLoading: Driver<Bool>
     }
     func transform(_ input: Input) -> Output {
-        let checkLoading = PublishRelay<Bool>()
-        func stopLoading() {
-            checkLoading.accept(false)
-        }
-        func startLoading() {
-            checkLoading.accept(true)
-        }
-        let hudTracker = checkLoading
-            .asDriverOnErrorJustReturn()
-            .distinctUntilChanged()
+        let hudTracker = Tracker()
         let apiRequest = Service
             .request()
-            .do(onNext: { _ in
-                stopLoading()
-            }, onError: { error in
-                stopLoading()
-            }, onCompleted: {
-                stopLoading()
-            }, onSubscribe: {
-                startLoading()
-            })
+            .tracking(hudTracker)
         let item = input
             .trigger
             .flatMapLatest(apiRequest.asDriverOnErrorJustReturn)
             .map { $0.info.shuffled() }
-        return Output(item: item, isLoading: hudTracker)
+        return Output(item: item, isLoading: hudTracker.asDriver())
     }
 }

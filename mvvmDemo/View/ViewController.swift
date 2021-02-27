@@ -38,6 +38,10 @@ private extension ViewController {
         let input = ViewModel.Input(trigger: rx.viewWillAppear.asDriver())
         let output = viewModel.transform(input)
 
+        let cellforRowAt = { [unowned self] in
+            return self.cellforRowAt($0, row: $1, element: $2)
+        }
+
         output.item
             .drive(tableView.rx.items)(cellforRowAt)
             .disposed(by: disposeBag)
